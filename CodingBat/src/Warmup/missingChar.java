@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class missingChar {
 
-    // String Builder이용 
+    // String Builder이용
     public static String missingChar1(String str, int n) {
 
         StringBuilder str2 = new StringBuilder(str);
