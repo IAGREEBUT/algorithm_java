@@ -148,4 +148,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
+
+#폴더 
+.gradle/
+
+
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,macos
