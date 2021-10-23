@@ -14,6 +14,17 @@ public class countXX {
         return cnt;
     }
 
+    public static int countXX2(String str){
+        int cnt = 0;
+
+        for(int i=0; i<str.length()-1; i++){
+            String tmp = str.substring(i, i+2);
+            if(tmp.compareTo("xx") == 0)
+                cnt++;
+        }
+        return cnt;
+    }
+
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
