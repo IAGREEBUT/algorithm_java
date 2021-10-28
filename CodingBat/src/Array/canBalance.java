@@ -9,21 +9,22 @@ public class canBalance {
         if(nums.length<=1) return false;
 
         //인덱스포인터
-        int left = 0, right = 1;
+        int mid = 1;
 
         // 왼쪽 배열의 합 (첫원소)
-        int sumL = nums[left];
+        int sumL = nums[mid-1];
 
         //오른쪽 배열의 합 (인덱스 1 ~ 끝까지)
         int sumR = 0;
-        for(int i=right; i<nums.length; i++){
+        for(int i=mid; i<nums.length; i++){
             sumR+=nums[i];
         }
 
-        while(right<nums.length){
+        while(mid<nums.length){
             if(sumR == sumL) return true; //합이 같으면 true
-            sumL+=nums[++left];//왼쪽 배열을 한개 늘리기
-            sumR-=nums[right++];//오른쪽 배열을 하나 줄이기
+            sumL+=nums[mid];//왼쪽 배열을 한개 늘리기
+            sumR-=nums[mid];//오른쪽 배열을 하나 줄이기
+            mid++;
         }
 
         return false;//한바퀴 돌았는데도 못찾았으면 불가능한 경우
