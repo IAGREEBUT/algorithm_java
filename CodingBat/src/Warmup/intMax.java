@@ -14,6 +14,11 @@ public class intMax {
     }
 
 
+    public static int intMax2(int a, int b, int c) {
+        return Math.max(a,Math.max(b,c));
+    }
+
+
 
     public static void main(String[] args) {
 
